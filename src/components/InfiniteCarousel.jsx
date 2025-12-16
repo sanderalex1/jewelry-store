@@ -1,7 +1,7 @@
 function InfiniteCarousel({ slides }) {
   return (
     <>
-      <div className="m-2 w-full border-black overflow-x-hidden no-scrollbar">
+      <div className="m-2 w-full border-black overflow-x-hidden no-scrollbar ">
         <div className="flex gap-4 w-max scroll">
           {/* Group A */}
           {slides.map((slide, index) => (
@@ -10,7 +10,9 @@ function InfiniteCarousel({ slides }) {
               className="w-24 p-4 flex flex-col items-center justify-center"
             >
               <img className="min-h-[96px]" src={slide.url} alt={slide.title} />
-              <p className="align-bottom">{slide.title}</p>
+              <p className="align-bottom carousel-font capitalize">
+                {slide.title}
+              </p>
             </div>
           ))}
 
@@ -21,7 +23,9 @@ function InfiniteCarousel({ slides }) {
               className="w-24 p-4 flex flex-col items-center justify-center"
             >
               <img className="min-h-[96px]" src={slide.url} alt={slide.title} />
-              <p className="align-bottom">{slide.title}</p>
+              <p className="align-bottom carousel-font capitalize">
+                {slide.title}
+              </p>
             </div>
           ))}
         </div>

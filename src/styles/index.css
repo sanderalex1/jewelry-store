@@ -1,9 +1,26 @@
 @import "tailwindcss";
 
+.main-font {
+  font-family: "DM Sans";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.carousel-font {
+  font-family: "Libre Baskerville";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .no-scrollbar {
   -ms-overflow-style: none; /* IE & Edge */
   scrollbar-width: none; /* Firefox */
 }
+
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
