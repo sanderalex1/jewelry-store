@@ -1,6 +1,6 @@
 function WordColorEffect({ text, active }) {
   return (
-    <h1 className="main-font text-4xl p-8">
+    <h1 className="main-font text-4xl p-8 whitespace-pre-line">
       {text.split(" ").map((word, i) => (
         <span
           key={i}

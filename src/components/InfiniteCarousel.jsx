@@ -1,7 +1,7 @@
 function InfiniteCarousel({ slides }) {
   return (
     <>
-      <div className="m-2 w-full border-black overflow-x-hidden no-scrollbar ">
+      <div className="m-2 w-full overflow-x-hidden no-scrollbar ">
         <div className="flex gap-4 w-max scroll">
           {/* Group A */}
           {slides.map((slide, index) => (

@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import infiniteCarouselSlides from "./data";
+import { infiniteCarouselSlides } from "./data";
+import { carouselSlides } from "./data";
 import InfiniteCarousel from "./components/InfiniteCarousel";
+import SlidingCarousel from "./components/SlidingCarousel";
 import WordColorEffect from "./components/WordColorEffect";
 
 function App() {
@@ -41,6 +43,7 @@ function App() {
             active={scrolled}
           />
         </div>
+        <SlidingCarousel slides={carouselSlides} />
       </main>
       <footer>
         <Footer />

@@ -1,11 +1,17 @@
 @import "tailwindcss";
+@import "./variables.css";
+
+* {
+  background-color: var(--bgColor);
+}
 
 .main-font {
+  text-align: center;
   font-family: "DM Sans";
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.2rem; /* 120% */
 }
 
 .carousel-font {
