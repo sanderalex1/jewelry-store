@@ -6,8 +6,39 @@ export const infiniteCarouselSlides = [
 ];
 
 export const carouselSlides = [
-  { url: "1.jpg", title: "" },
-  { url: "2.jpg", title: "" },
-  { url: "3.jpg", title: "" },
-  { url: "4.jpg", title: "" },
+  { url: "1.jpg", title: "eclipse" },
+  { url: "2.jpg", title: "afterlight" },
+  { url: "3.jpg", title: "stillnes" },
+  { url: "4.jpg", title: "undertone" },
 ];
+
+export const cards = [
+  {
+    img: "ring1.png",
+    title: "Lunar Fold",
+    material: "Sterling Silver",
+    price: `$${380}`,
+  },
+  {
+    img: "ring1.png",
+    title: "Lunar Fold",
+    material: "Sterling Silver",
+    price: `$${380}`,
+  },
+  {
+    img: "ring1.png",
+    title: "Lunar Fold",
+    material: "Sterling Silver",
+    price: `$${380}`,
+  },
+  {
+    img: "ring1.png",
+    title: "Lunar Fold",
+    material: "Sterling Silver",
+    price: `$${380}`,
+  },
+];
+
+export const body = ["ear", "wrist", "finger", "neck"];
+export const material = ["silver", "gold", "pearl", "platinum"];
+export const collections = ["eclipse", "afterlight", "stillness", "undertone"];

@@ -54,16 +54,21 @@ function SlidingCarousel({ slides }) {
         {groupedSlides.map((group, i) => (
           <div
             key={i}
-            className="w-full flex-shrink-0 grid grid-cols-2 gap-2 px-2"
+            className="w-full flex-shrink-0 grid grid-cols-2 gap-2 pt-[4.6875rem] pb-[2.10888rem]"
           >
             {group.map((slide, j) => (
-              <img
-                key={j}
-                src={slide.url}
-                alt=""
-                draggable={false}
-                className="w-full h-[15rem] object-cover"
-              />
+              <div>
+                <img
+                  key={j}
+                  src={slide.url}
+                  alt=""
+                  draggable={false}
+                  className="w-full h-[15rem] object-cover"
+                />
+                <h1 className="carousel-font capitalize text-sm mt-2 ml-2">
+                  {slide.title}
+                </h1>
+              </div>
             ))}
           </div>
         ))}

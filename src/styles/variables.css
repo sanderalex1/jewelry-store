@@ -1,3 +1,5 @@
 :root {
   --bgColor: #ececec;
+  --mainFont: "DM Sans", sans-serif;
+  --carouselFont: "Libre Baskerville", serif;
 }

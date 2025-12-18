@@ -1,24 +1,21 @@
-@import "tailwindcss";
 @import "./variables.css";
+@import "tailwindcss";
 
-* {
+html,
+body {
   background-color: var(--bgColor);
 }
 
 .main-font {
   text-align: center;
   font-family: "DM Sans";
-  font-size: 1rem;
   font-style: normal;
-  font-weight: 400;
   line-height: 1.2rem; /* 120% */
 }
 
 .carousel-font {
   font-family: "Libre Baskerville";
-  font-size: 0.875rem;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }
 

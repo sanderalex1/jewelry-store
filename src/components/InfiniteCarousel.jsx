@@ -23,7 +23,7 @@ function InfiniteCarousel({ slides }) {
               className="w-24 p-4 flex flex-col items-center justify-center"
             >
               <img className="min-h-[96px]" src={slide.url} alt={slide.title} />
-              <p className="align-bottom carousel-font capitalize">
+              <p className="align-bottom carousel-font capitalize text-sm">
                 {slide.title}
               </p>
             </div>
