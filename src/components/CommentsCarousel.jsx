@@ -31,7 +31,7 @@ function CommentsCarousel({ comments }) {
   }, [goToNext]);
 
   return (
-    <div className="flex flex-col justify-center p-4 gap-4">
+    <div className="flex flex-col justify-center p-4 pb-24">
       <div className="flex flex-col gap-8 text-center max-w-md">
         <div className="flex flex-col gap-2">
           <h1 className="carousel-font uppercase text-2xl">press</h1>
@@ -49,10 +49,17 @@ function CommentsCarousel({ comments }) {
             {comments.map((comment, i) => (
               <div
                 key={i}
-                className="w-full px-8 flex-shrink-0 text-center text-lg"
+                className="w-full px-8 px-4 flex-shrink-0 text-center text-lg"
               >
-                <p className="main-font">{comment.comment}</p>
-                <p className="text-xs mt-2 uppercase">{comment.author}</p>
+                <p
+                  className="main-font tracking-wide"
+                  style={{ lineHeight: "1.4" }}
+                >
+                  {comment.comment}
+                </p>
+                <p className="italic main-font text-xs mt-2 uppercase">
+                  {comment.author}
+                </p>
               </div>
             ))}
           </div>
@@ -62,14 +69,14 @@ function CommentsCarousel({ comments }) {
         {comments.map((_, commentIndex) => (
           <div
             key={commentIndex}
-            className={`text-xl transition-opacity ${
+            className={`text-xl font-bold transition-opacity ${
               commentIndex === currentIndex
                 ? "text-black opacity-100"
                 : "text-black opacity-50"
             }`}
             onClick={() => goToComment(commentIndex)}
           >
-            ●
+            —
           </div>
         ))}
       </div>

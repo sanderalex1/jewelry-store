@@ -13,6 +13,7 @@ import { body } from "./data";
 import { material } from "./data";
 import { collections } from "./data";
 import { comments } from "./data";
+import { footerInfo } from "./data";
 
 function App() {
   const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
@@ -104,7 +105,7 @@ function App() {
         <CommentsCarousel comments={comments} />
       </main>
       <footer>
-        <Footer />
+        <Footer data={footerInfo} />
       </footer>
     </>
   );

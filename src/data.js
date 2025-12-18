@@ -51,7 +51,7 @@ export const comments = [
   },
   {
     comment:
-      "A rare clarity of intention. Each piece feels considered, resolved, and complete",
+      "Striking, confident, and unapologetically modern. Each piece tells a story of power and individuality",
     author: "LUMEN HOUSE",
   },
   {
@@ -63,4 +63,11 @@ export const comments = [
       "These creations blur the boundary between wearable object and contemporary art",
     author: "SEIRU",
   },
+];
+
+export const footerInfo = [
+  { category: "contact us", link: "" },
+  { category: "faq", link: "" },
+  { category: "legal terms", link: "" },
+  { category: "privacy policy", link: "" },
 ];
