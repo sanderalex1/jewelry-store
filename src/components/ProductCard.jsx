@@ -1,7 +1,7 @@
 function ProductCard({ card }) {
   return (
     <>
-      <div className="flex w-[11rem] flex-col aling-start gap-[0.5]">
+      <div className="flex w-[10rem] flex-col aling-start gap-[0.5]">
         <img
           className="h-[11rem] self-stretch aspect-[176.71/176.71]"
           src={card.img}

@@ -13,7 +13,7 @@ import CloseIcon from "@mui/icons-material/Close";
 const searchBarStyles = {
   display: "flex",
   justifySelf: "center",
-  width: "24rem",
+  MaxWidth: "24rem",
   backgroundColor: "#E0E0E0",
   padding: "0.5625rem 0.75rem",
   fontSize: "0.875rem",
@@ -36,7 +36,7 @@ function SidePanel({ open, onClose, body, material, collections }) {
         </IconButton>
         <InputBase placeholder="Search for..." sx={searchBarStyles} />
       </Box>
-      <Box className="flex flex-wrap p-4 h-1/2">
+      <Box className="flex flex-wrap p-4 h-auto">
         <Box className="flex gap-36">
           <Box className="flex flex-col p-4">
             <h1 className="main-font capitalize font-bold">body</h1>
@@ -96,11 +96,11 @@ function SidePanel({ open, onClose, body, material, collections }) {
           </List>
         </Box>
       </Box>
-      <Box className="flex h-[12rem] m-4 gap-4 justify-center">
+      <Box className="flex h-[12rem] m-4 gap-2 justify-center">
         <img src="placeholder.jpg" alt="" />
         <img src="placeholder.jpg" alt="" />
       </Box>
-      <Box className="flex justify-around main-font">
+      <Box className="flex justify-around main-font pt-4 pb-4">
         <Box className="flex flex-col text-left gap-2">
           <p className="uppercase">faq</p>
           <p className="capitalize">contact</p>
@@ -114,7 +114,7 @@ function SidePanel({ open, onClose, body, material, collections }) {
   );
 
   return (
-    <Drawer anchor="top" open={open} onClose={onClose}>
+    <Drawer anchor="left" open={open} onClose={onClose}>
       {content()}
     </Drawer>
   );
