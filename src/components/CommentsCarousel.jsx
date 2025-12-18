@@ -32,10 +32,10 @@ function CommentsCarousel({ comments }) {
 
   return (
     <div className="flex flex-col justify-center p-4 gap-4">
-      <div className="flex flex-col gap-4 text-center max-w-md">
+      <div className="flex flex-col gap-8 text-center max-w-md">
         <div className="flex flex-col gap-2">
-          <h1 className="carousel-font uppercase">press</h1>
-          <h2 className="carousel-font capitalize opacity-90 uppercase text-xs">
+          <h1 className="carousel-font uppercase text-2xl">press</h1>
+          <h2 className="carousel-font capitalize opacity-90 uppercase text-sm">
             The experience
           </h2>
         </div>
@@ -47,7 +47,10 @@ function CommentsCarousel({ comments }) {
             }}
           >
             {comments.map((comment, i) => (
-              <div key={i} className="w-full px-8 flex-shrink-0 text-center">
+              <div
+                key={i}
+                className="w-full px-8 flex-shrink-0 text-center text-lg"
+              >
                 <p className="main-font">{comment.comment}</p>
                 <p className="text-xs mt-2 uppercase">{comment.author}</p>
               </div>

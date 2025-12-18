@@ -66,7 +66,7 @@ function App() {
         <SlidingCarousel slides={carouselSlides} />
         <div>
           <div className="mx-auto flex w-[13.8rem] flex-col items-center gap-[1.25rem] mt-8">
-            <h2 className="carousel-font text-base text-center">ECLIPSE</h2>
+            <h2 className="carousel-font text-xl text-center">ECLIPSE</h2>
             <h1 className="main-font text-center">
               Explores balance through weight and negative space
             </h1>
