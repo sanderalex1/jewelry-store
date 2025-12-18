@@ -54,14 +54,14 @@ function SlidingCarousel({ slides }) {
         {groupedSlides.map((group, i) => (
           <div
             key={i}
-            className="w-full flex-shrink-0 grid grid-cols-2 gap-2 pt-[4.6875rem] pb-[2.10888rem] pr-2"
+            className="w-full flex-shrink-0 grid grid-cols-2 gap-2 pt-[2rem] pb-[2.10888rem] pr-2"
           >
             {group.map((slide, j) => (
               <div>
                 <img
                   key={j}
                   src={slide.url}
-                  alt=""
+                  alt={slide.title}
                   draggable={false}
                   className="w-full h-[15rem] object-cover"
                 />
