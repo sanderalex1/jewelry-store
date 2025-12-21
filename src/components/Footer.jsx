@@ -1,6 +1,6 @@
 import { Divider } from "@mui/material";
 
-function Footer({ data }) {
+function Footer({ data, onNewsClick }) {
   return (
     <>
       <Divider />
@@ -10,8 +10,9 @@ function Footer({ data }) {
             {data.category}
           </ul>
         ))}
-        <p className="main-font text-sm uppercase">social</p>
-        <p className="main-font text-sm uppercase">newsletter lunaria</p>
+        <p onClick={onNewsClick} className="main-font text-sm uppercase">
+          newsletter lunaria
+        </p>
       </div>
     </>
   );

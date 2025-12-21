@@ -6,6 +6,7 @@ import SlidingCarousel from "./components/SlidingCarousel";
 import ProductCard from "./components/ProductCard";
 import SidePanel from "./components/SidePanel";
 import CommentsCarousel from "./components/CommentsCarousel";
+import NewsPaperPanel from "./components/NewsPaperPanel";
 import { infiniteCarouselSlides } from "./data";
 import { carouselSlides } from "./data";
 import { cards } from "./data";
@@ -17,6 +18,7 @@ import { footerInfo } from "./data";
 
 function App() {
   const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
+  const [isNewsPaperPanelOpen, setNewsPaperPanelOpen] = useState(false);
 
   // const [scrolled, setScrolled] = useState(false);
 
@@ -105,7 +107,14 @@ function App() {
         <CommentsCarousel comments={comments} />
       </main>
       <footer>
-        <Footer data={footerInfo} />
+        <Footer
+          data={footerInfo}
+          onNewsClick={() => setNewsPaperPanelOpen(true)}
+        />
+        <NewsPaperPanel
+          open={isNewsPaperPanelOpen}
+          onClose={() => setNewsPaperPanelOpen(false)}
+        />
       </footer>
     </>
   );
